@@ -1,0 +1,10 @@
+fileTypes: [
+    "ui.alan"
+]
+name: "Alan GUI"
+patterns: [
+    {
+        'include': 'source.alan'
+    }
+]
+scopeName: "source.ui.alan"
