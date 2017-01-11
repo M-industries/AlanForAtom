@@ -1,0 +1,92 @@
+fileTypes: [
+    "alan"
+    "schema"
+    "grammar"
+    "control"
+]
+name: "Alan"
+patterns: [
+    {
+        match: "//.*$"
+        name: "comment.line.double-slash.alan"
+    }
+    {
+        match: "(\").*?(\")"
+        name: "string.quoted.double.alan"
+        'captures':
+            '1':
+                'name': 'punctuation.definition.string.quoted.double.begin.alan'
+            '2':
+                'name': 'punctuation.definition.string.quoted.double.end.alan'
+    }
+    {
+        match: "(\').*?(\')"
+        name: "string.quoted.single.alan"
+        'captures':
+            '1':
+                'name': 'punctuation.definition.string.quoted.single.begin.alan'
+            '2':
+                'name': 'punctuation.definition.string.quoted.single.end.alan'
+    }
+    {
+        match: "\\["
+        name: "punctuation.definition.array.begin.alan"
+    }
+    {
+        match: "\\]"
+        name: "punctuation.definition.array.end.alan"
+    }
+    {
+        match: "\\("
+        name: "punctuation.brace.round.begin.alan"
+    }
+    {
+        match: "\\)"
+        name: "punctuation.brace.round.end.alan"
+    }
+    {
+        match: "\\{"
+        name: "punctuation.brace.curly.begin.alan"
+    }
+    {
+        match: "\\}"
+        name: "punctuation.brace.curly.end.alan"
+    }
+    {
+        match: "\\b[0-9]+\\b"
+        name: "constant.numeric.alan"
+    }
+    {
+        match: "(?:\\s|^)(<=|=|>=|==|&&)(?=\s|//)"
+        name: "keyword.operator.comparison.alan"
+    }
+    {
+        match: "(?:\\s|^)(::|:|=>|->|~>|<-|<~)(?=\\s|//)"
+        name: "punctuation.separator.key-value.alan"
+    }
+    {
+        match: "(?:\\s|^)(windows|webservers|view|systems|system instances|settings|servers|root view|root|roles mapping|roles|reporting|query|providing connections|phrases|numerical types|linked node mapping|languages|keywords|interfaces mapping|interface|external systems|dynamic users|duplication mapping|component types|component rules)(?=\\s|//)"
+        name: "storage.alan"
+    }
+    {
+        match: "(?:\\s|^)(integer|number|natural)(?=\\s|//)"
+        name: "support.function.alan"
+    }
+    {
+        match: "(?:\\s|^)(`|\\^|\\@\\?\\^|\\@\\%\\^|\\@|\\?\\^|\\?\\?\\^|\\?|\>|\<|\>\>|\<\<|\/|\\.\}|\\.\\^|\\.\>|\\.\\.\\.|\\.|\-\-|\-|\\,|\\+\\^|\\+|\\*\\*|\\*\\&\\#|\\*\\&|\\*|!\\&|\\&\\^|\\&\\&|\\&|\%\}|\%\\^|\%|\\$\\^|\\$|\#|~|\!|\\\\)(?=\\s|//)"
+        name: "variable.parameter.alan"
+    }
+    {
+        match: "(?:\\s|^)(10\^|%d|trim|sumlist|sum|subtract|stringify|set|product|min|max|increment|fraction|execute|division|count|ceil|add)(?=\\s|//)"
+        name: "keyword.operator.math.alan"
+    }
+    {
+        match: "(?:\\s|^)(zero|yes|writable|workfor|without|with|windows|window|widget|where|Wednesday|webservers|webserver|wallpaper|views|view|verified|value|UTC|users|user|url|updater|update|unsubscribe|unique|unexpected|unconstrained|UID|types|type|type|Tuesday|true|trim|token|today|to|timezone|timer|time|Thursday|then|templates|TEMP2|TEMP|tags|tag|tables|table|systems|system|switchable|switch|supported|Sunday|sumlist|sum|success|subtract|substring|subscription|subscribe|stringify|strategy|str|store|stopwatch|sticky|std|static|state|state|startswith|start|space|sort|socket|small|single|shared|setto|settings|set|servers|separator|separate|selection|selection|selected|select|seconds|schedule|scaling|scaling|Saturday|root|roles|role|resolvable|requires|request|reports|reporting|report limit|report|rename|remove|remainder|reload on unexpected error|reload|relative|regexp|refresh|referencer|record|read|rate|query|providing|provides|provide|protocol|property|project|product|primary|prevention|preceding|power|port|placeholder|phrases|pcsc|path|password|parameters|parameter|panic|overview|outputs|out|ordered|or|operator|open|ontimeout|one|on|of|numerical|nullable|now|not|none|node|no|new|never|namespace|name|mutation|multi-line|Monday|models|model|minutes|min|migration|metadata|merge|max|markup|mapping|map|log|loader|load|list|linker|linked|link|limit|limit|lifetime|length|languages/|languages|language|label|keys|keyboard|key|key|JOIN|join|invoke|invocation|invalidate|interval|internal|interfaces|interface|instruction|instances|instance|inputs|input|inlined|inline|initialize|initialization|initial|index|indent|increment|include|in|implicit|implementation|implement|ignore|if|id|hours|hour|hidden|hash|hack|guid|graph|from|Friday|frames|frame|forward|foreign|floor|float|flatten|flags|FIXME|first|find|filter|filename|file_prefix|file_name_parameters|file_name_arguments|fields|fast clicks|fast|false|failure|factor|external|extension|exposes|expose|experimental|exit|EXISTS|execute|every|event|errors|error|equals|enum|entry|entity|enriched|enrich|engine|enabled|empty|email|else|dynamic|duration|duration|duplicate|dormant|division|dist|disabled|diff|devenv|desired|descending|desc|derived|deprecated|deployments|denseness|delete|default language|default|default|decimal|day|datetime|date|database|custom|current|creator|creation|created|create|count|copy|convert|control|context|content selection|content|contains|consumes|consume|constrain|connections|connection|configuration|concat|compiler|command|columns|clicks|checkpoint|ceil|causal|cast|candidate|buckets|brand|branch|boolean|blinking|binding|bidirectional|base|autoincrement|ATR|at|ascending|as|application wallpaper url|application name|application creator|application brand|application|any|anonymous|announcement|announcement|and|anchor|allow|aggregate|administrator|add|acyclic|accidental exit prevention|accidental|$package|$deployed|.self)(?=\\s|//)"
+        name: "entity.name.function.alan"
+    }
+    {
+        match: "(?:\\s|^)(text|stategroup|sparsematrix|reference|number|natural|matrix|integer|group|file|dictionary|densematrix|component|collection)(?=\\s|//)"
+        name: "support.function.alan"
+    }
+]
+scopeName: "source.alan"
