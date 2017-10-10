@@ -1,7 +1,7 @@
 {
-  "name": "language-alan",
+  "name": "language-fabric",
   "version": "0.0.0",
-  "description": "Alan support for Atom",
+  "description": "Fabric support for Atom",
   "license": "MIT",
   "engines": {
     "atom": "*"
