@@ -1,20 +1,9 @@
 {
   "name": "language-alan",
-  "main": "lib/provider.js",
   "version": "0.0.0",
   "description": "Alan support for Atom",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "engines": {
-    "atom": "^1.0.0"
-  },
-  "dependencies": {
-  },
-  "providedServices": {
-    "builder": {
-      "description": "Verify Alan files",
-      "versions": {
-        "2.0.0": "provideBuilder"
-      }
-    }
+    "atom": "*"
   }
 }

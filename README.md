@@ -1,5 +1,4 @@
-# Alan syntax highlighting and snippets for Atom
+# Fabric for Atom
 
-Open this folder in terminal and run:  
-apm install  
-apm link
+Provides support for Fabric projects with:
+- Syntax highlighting in Alan files
