@@ -1,6 +1,5 @@
 fileTypes: [
     "alan"
-    "control"
 ]
 name: "Alan"
 patterns: [
